@@ -10,10 +10,14 @@
 <body>
     <h1>Movies</h1>
     <ul>
-        {%for movie in movies%}
+        {%for movie in data%}
+        <a href="{{movie.id}}">
             <li>{{movie.title}}</li>
+        </a>
         {%endfor%}
     </ul>
+
+    <a href="/movies/add">add a movie</a>
 </body>
 
 </html>
